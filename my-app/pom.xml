@@ -12,7 +12,13 @@
       <!-- This property will be set by the Maven Dependency plugin -->
       <annotatedJdk>${org.checkerframework:jdk8:jar}</annotatedJdk>
   </properties>
-
+  <distributionManagement>
+    <repository>
+      <id>libs-snapshot-local</id>
+      <name>snapshot-local</name>
+      <url>http://localhost:8081/artifactory/libs-snapshot-local/</url>
+    </repository>
+  </distributionManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
